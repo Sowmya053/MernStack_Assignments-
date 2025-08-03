@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Keyboard</title>
+  <style>
+    body {
+      background-color: #dc61c5;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+
+    .keyboard {
+      display: grid;
+      grid-template-columns: repeat(15, 1fr);
+      gap: 5px;
+      padding: 20px;
+      background: #f7dff0;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px #eae9e9fe;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .key {
+      padding: 15px 5px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #f9f9f9;
+      text-transform: lowercase;
+    }
+
+    /* Special width keys */
+    .key.backspace { grid-column: span 2; }
+    .key.tab { grid-column: span 2; }
+    .key.caps { grid-column: span 2; }
+    .key.enter { grid-column: span 2; }
+    .key.shift { grid-column: span 2; }
+    .key.space { grid-column: span 2; }
+
+    /* Row breaks */
+    .row-1 { grid-column: 1 / span 15; }
+    .row-2 { grid-column: 1 / span 15; }
+    .row-3 { grid-column: 1 / span 15; }
+    .row-4 { grid-column: 1 / span 15; }
+    .row-5 { grid-column: 1 / span 15; }
+  </style>
+</head>
+<body>
+  <h1>Keyboard</h1>
+
+  <div class="keyboard">
+    <!-- Row 1 -->
+    <button class="key">`</button>
+    <button class="key">1</button>
+    <button class="key">2</button>
+    <button class="key">3</button>
+    <button class="key">4</button>
+    <button class="key">5</button>
+    <button class="key">6</button>
+    <button class="key">7</button>
+    <button class="key">8</button>
+    <button class="key">9</button>
+    <button class="key">0</button>
+    <button class="key">-</button>
+    <button class="key">=</button>
+    <button class="key backspace">backspace</button>
+
+    <!-- Row 2 -->
+    <button class="key tab">tab</button>
+    <button class="key">q</button>
+    <button class="key">w</button>
+    <button class="key">e</button>
+    <button class="key">r</button>
+    <button class="key">t</button>
+    <button class="key">y</button>
+    <button class="key">u</button>
+    <button class="key">i</button>
+    <button class="key">o</button>
+    <button class="key">p</button>
+    <button class="key">[</button>
+    <button class="key">]</button>
+    <button class="key">\</button>
+
+    <!-- Row 3 -->
+    <button class="key caps">caps</button>
+    <button class="key">a</button>
+    <button class="key">s</button>
+    <button class="key">d</button>
+    <button class="key">f</button>
+    <button class="key">g</button>
+    <button class="key">h</button>
+    <button class="key">j</button>
+    <button class="key">k</button>
+    <button class="key">l</button>
+    <button class="key">;</button>
+    <button class="key">'</button>
+    <button class="key enter">&lt; enter</button>
+
+    <!-- Row 4 -->
+    <button class="key shift">shift</button>
+    <button class="key">z</button>
+    <button class="key">x</button>
+    <button class="key">c</button>
+    <button class="key">v</button>
+    <button class="key">b</button>
+    <button class="key">n</button>
+    <button class="key">m</button>
+    <button class="key">,</button>
+    <button class="key">.</button>
+    <button class="key">/</button>
+    <button class="key shift" style="grid-column: span 3;">shift</button>
+
+    <!-- Row 5 -->
+    <button class="key space">.com</button>
+    <button class="key space">@</button>
+    <button class="key spacebar" style="grid-column: span 6;">space</button>
+    <button class="key alt">alt</button>
+    <button class="key ctrl">ctrl</button>
+    <button class="←">←</button>
+    <button class="↑">↑</button>
+    <button class="→">→</button>
+    
+  </div>
+</body>
+</html>
